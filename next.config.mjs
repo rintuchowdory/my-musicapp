@@ -1,10 +1,9 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  reactStrictMode: true,
+  // Remove or comment out these lines:
+  // output: 'export',
+  // basePath: '/my-musicapp',
+  // images: { unoptimized: true },
 };
 
 export default nextConfig;
