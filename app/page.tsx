@@ -25,12 +25,12 @@ export default function Home() {
     setCurrentTrack(track); setIsPlaying(true); addToPlaylist(track);
   };
 
-  const NAV = [
+  const NAV: { id: Tab; icon: string; label: string; badge?: number }[] = [
     { id: 'search', icon: '🔍', label: 'Search' },
     { id: 'playlist', icon: '🎵', label: 'Playlist', badge: playlist.length || undefined },
     { id: 'lyrics', icon: '🎤', label: 'Lyrics' },
     { id: 'radio', icon: '📻', label: 'Radio' },
-  ] as const;
+  ];
 
   return (
     <div style={{ display:'flex', height:'100vh', flexDirection:'column', background:'#070b14' }}>
