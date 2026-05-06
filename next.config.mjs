@@ -1,9 +1,10 @@
-// next.config.mjs
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove or comment out these lines:
-  // output: 'export',
-  // basePath: '/my-musicapp',
-  // images: { unoptimized: true },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: '*.ytimg.com' },
+      { protocol: 'https', hostname: 'i.ytimg.com' },
+    ],
+  },
 };
-
 export default nextConfig;
